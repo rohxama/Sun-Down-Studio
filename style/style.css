@@ -21,7 +21,7 @@ li{
 
 #page1{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     padding: 0vw 2vw;
 }
@@ -103,4 +103,10 @@ nav{
     text-align: end;
     line-height: 8vw;
     font-weight: 600;
+}
+
+#page1 video{
+    width: 100%;
+    border-radius: 30px;
+    margin-top: 5vw;
 }
