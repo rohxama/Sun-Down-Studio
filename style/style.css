@@ -109,4 +109,103 @@ nav{
     width: 100%;
     border-radius: 30px;
     margin-top: 5vw;
+    position: relative;
+}
+
+.anime-top{
+    position: absolute;
+    right: 0;
+    top: 35%;
+    width: 45vw;
+    height: 35vw;
+}
+
+.ball1{
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: #FE370D;
+    filter: blur(20px);
+    position: absolute;
+}
+
+.ball2{
+    width: 30vw;
+    height: 30vw;
+    background-color: #FE370D;
+    border-radius: 50%;
+    filter: blur(20px);
+    position: absolute;
+}
+
+.ball3{
+    animation-name: anime;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    width: 30vw;
+    height: 30vw;
+    background: linear-gradient(#FE370D, #fe410d);
+    border-radius: 50%;
+    filter: blur(30px);
+    position: absolute;
+}
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    padding: 8vw 0;
+}
+.moving-text{
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.moving-text::-webkit-scrollbar{
+    display: none;
+}
+
+.wrapper{
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: moveText;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+.wrapper h1{
+    font-size: 9vw;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.wrapper .dot{
+    width: 75px;
+    height: 75px;
+    background-color: #FE370D;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 1vw 2vw;
+}
+
+@keyframes anime {
+    from{
+        transform: translate(30%, 0%);
+    }
+    to{
+        transform: translate(0%, -10%);
+    }
+    
+}
+
+@keyframes moveText {
+    to{
+        transform: translate(0);
+    }
+    from{
+        transform: translate(-100%);
+    }
 }
