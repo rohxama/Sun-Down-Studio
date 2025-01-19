@@ -191,6 +191,38 @@ nav{
     margin: 1vw 2vw;
 }
 
+.page2-btm{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5vw 0 0;
+}
+
+.page2-btm h1{
+    font-size: 4.1vw;
+    line-height: 4vw;
+    width: 55%;
+    font-weight: 600;
+}
+
+.page2-btm .right-btm{
+    width: 19%;
+}
+
+.page2-btm p{
+    font-size: 1vw;
+    font-weight: 500;
+    margin-top: 3vw;
+}
+
+.page2-btm img{
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 18vw;
+}
+
 @keyframes anime {
     from{
         transform: translate(30%, 0%);
