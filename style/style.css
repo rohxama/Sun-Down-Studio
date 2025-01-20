@@ -141,7 +141,7 @@ nav{
 
 .ball3{
     animation-name: anime;
-    animation-duration: 5s;
+    animation-duration: 4s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -152,11 +152,15 @@ nav{
     filter: blur(30px);
     position: absolute;
 }
+
 #page2{
     min-height: 100vh;
     width: 100%;
     padding: 8vw 0;
+    position: relative;
+    z-index: 999;
 }
+
 .moving-text{
     white-space: nowrap;
     overflow-x: auto;
@@ -205,6 +209,8 @@ nav{
     line-height: 4vw;
     width: 55%;
     font-weight: 600;
+    position: relative;
+    z-index: 99;
 }
 
 .page2-btm .right-btm{
@@ -223,12 +229,38 @@ nav{
     margin-top: 18vw;
 }
 
+.anime-btm{
+    width: 33vw;
+    height: 33vw;
+    border-radius: 50%;
+    background: linear-gradient(to top right, #FE370D, #fe5d0d);
+    position: absolute;
+    filter: blur(20px);
+    top: 58%;
+    left: 25%;
+    animation-name: animeBtm;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
 @keyframes anime {
     from{
         transform: translate(30%, 0%);
     }
     to{
         transform: translate(0%, -10%);
+    }
+    
+}
+
+@keyframes animeBtm {
+    from{
+        transform: translate(8%, -8%) skew(0);
+    }
+    to{
+        transform: translate(-8%, 8%) skew(-15deg);
     }
     
 }
